@@ -31,18 +31,6 @@ const mainBody = {
 };
 
 // ABOUT SECTION
-// If you want the About Section to show a profile picture you can fill the profilePictureLink either with:
-//a) your Instagram username
-//      i.e:profilePictureLink:"johnDoe123",
-//b) a link to an hosted image
-//      i.e:profilePictureLink:"www.picturesonline.com/johnDoeFancyAvatar.jpg",
-//c) image in "editable-stuff" directory and use require("") to import here,
-//      i.e: profilePictureLink: require("../editable-stuff/hashirshoaeb.png"),
-//d) If you do not want any picture to be displayed, just leave it empty :)
-//      i.e: profilePictureLink: "",
-// For Resume either provide link to your resume or import from "editable-stuff" directory
-//     i.e resume: require("../editable-stuff/resume.pdf"),
-//         resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
 
 const about = {
   show: true,
@@ -50,8 +38,9 @@ const about = {
   imageLink: require("../editable-stuff/pfp.jpg"),
   imageSize: 309,
   message:
-    "My name is Sahibpreet Singh. I’m pursuing Computer Science Engineering from Chandigarh Engineering College,Landran(Pb). I'm passionate towards learing new technologies, and my goal is to pursue this passion within the field of software engineering. In my free time I like to explore open source projects.",
-  resume: "https://docs.google.com/document/d/1AoJQ9B79K7J5NiTzdmoA8QZY2UfAaKh5/edit?usp=sharing&ouid=112900004832349102035&rtpof=true&sd=true",
+    "My name is Sahibpreet Singh. I’m pursuing Computer Science Engineering from Chandigarh Engineering College,Landran(Pb). I'm passionate towards learing new technologies, and my goal is to pursue this passion within the field of software engineering. In my free time, I like to explore open source projects.",
+  resume:
+    "https://docs.google.com/document/d/1oD9f4TKstGwO5No8UCmq_ySgYXcb4I3a/edit?usp=sharing&ouid=112900004832349102035&rtpof=true&sd=true",
 };
 
 // PROJECTS SECTION
@@ -62,9 +51,15 @@ const about = {
 const repos = {
   show: true,
   heading: "Recent Projects",
-  gitHubUsername: "sahibpreet82000", //i.e."johnDoe12Gh"
+  gitHubUsername: "sahibpreet82000",
   reposLength: 1,
-  specificRepos: ["Ecom-express","TODO-APP","Ecom-Express-Backend","Java_practice_programs","sahibpreet82000"]
+  specificRepos: [
+    "Ecom-express",
+    "TODO-APP",
+    "Ecom-Express-Backend",
+    "Java_practice_programs",
+    "sahibpreet82000",
+  ],
 };
 
 // Leadership SECTION
@@ -74,21 +69,21 @@ const leadership = {
   message:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
   images: [
-    { 
-      img: require("../editable-stuff/pfp.jpg"), 
-      label: "First slide label", 
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
+    {
+      img: require("../editable-stuff/pfp.jpg"),
+      label: "First slide label",
+      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
     },
-    { 
-      img: require("../editable-stuff/pfp.jpg"), 
-      label: "Second slide label", 
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
+    {
+      img: require("../editable-stuff/pfp.jpg"),
+      label: "Second slide label",
+      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
     },
   ],
   imageSize: {
-    width:"615",
-    height:"450"
-  }
+    width: "615",
+    height: "450",
+  },
 };
 
 // SKILLS SECTION
@@ -97,19 +92,19 @@ const skills = {
   heading: "Skills",
   hardSkills: [
     { name: "SQL", value: 75 },
-    { name: "JavaScript", value: 90 },
+    { name: "JavaScript", value: 92 },
     { name: "Node.js", value: 75 },
     { name: "Data Structures", value: 85 },
-    { name: "Java", value: 80 },
-    { name: "HTML/CSS", value: 85 },
+    { name: "Java", value: 90 },
+    { name: "HTML/CSS", value: 95 },
     { name: "C/C++", value: 65 },
   ],
   softSkills: [
-    { name: "Goal-Oriented", value: 80 },
-    { name: "Collaboration", value: 90 },
+    { name: "Goal-Oriented", value: 90 },
+    { name: "Collaboration", value: 92 },
     { name: "Positivity", value: 85 },
     { name: "Adaptability", value: 95 },
-    { name: "Problem Solving", value: 80 },
+    { name: "Problem Solving", value: 85 },
     { name: "Empathy", value: 90 },
     { name: "Organization", value: 90 },
     { name: "Creativity", value: 80 },
@@ -130,19 +125,28 @@ const experiences = {
   heading: "Experiences",
   data: [
     {
-      role: 'Software Engineer',// Here Add Company Name
-      date: 'June 2018 – Present',
+      role: "Software Engineer", // Here Add Company Name
+      date: "June 2018 – Present",
     },
     {
-      role: 'Front-End Developer',
-      date: 'May 2017 – May 2018',
+      role: "Front-End Developer",
+      date: "May 2017 – May 2018",
     },
-  ]
-}
+  ],
+};
 
 // Blog SECTION
 // const blog = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences };
+export {
+  navBar,
+  mainBody,
+  about,
+  repos,
+  skills,
+  leadership,
+  getInTouch,
+  experiences,
+};
